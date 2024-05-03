@@ -33,3 +33,5 @@ const menuButton=document.querySelector(".navbar_icons");
     navbar_menu.classList.toggle("navbar_open");
     menuButton.classList.toggle("open");
 });
+
+

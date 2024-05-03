@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 /* Menu */
 html{
     scroll-behavior: smooth;
@@ -46,7 +48,9 @@ section{
     position: relative;
     margin-left: 10px;
     margin-right: 10px;
+    font-weight: 500;
 }
+
 .nav-link:hover{
     color: #ffa500;
 }
@@ -92,10 +96,12 @@ section{
 .banner-left{
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 .banner-right{
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
 
@@ -274,6 +280,7 @@ section{
     padding: 5px 20px;
     border-radius: 10px;
     background-color: var(--orange);
+    outline: none;
 }
 
 
@@ -305,6 +312,128 @@ section{
     }
 
 }
+
+
+
+/* Modal */
+.modal-product{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-product.openmodal{
+    display: flex;
+}
+
+.modal-body{
+    width: 400px;
+}
+
+.modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.modal-close i{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.modal-close i:hover{
+    transform: scale(1.08);
+    transition: all 0.2 ease;
+}
+
+.modal-first p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--orange);
+}
+
+.modal-body--title {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.modal-body--title span{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.modal-body--price{
+    text-align: center;
+    color: red;
+    font-weight: 500;
+}
+
+.modal-container{
+    position: relative;
+    /* background-color:rgb(254, 227, 179); */
+    background-color: var(--white);
+    padding: 0 100px 30px 100px;
+    border-radius: 10px;
+}
+
+.modal-body--img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.modal-body--img img:hover{
+    transform:scale(1.02);
+    transition:all 0.3s linear
+}
+
+.modal-end{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+
+.modal-footer--add{
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: var(--orange);
+    border-radius: 10px;
+    color: var(--white);
+}
+
+.modal-footer--add:hover,.modal-footer--close:hover{
+    transition: var(--smooth);
+    color: var(--orange);
+    background-color: #9a3324;
+
+}
+
+.modal-footer--close{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: var(--orange);
+    border-radius: 10px;
+    color: var(--white);
+
+}
+
+
+
+
+
 
 /* List page */
 
