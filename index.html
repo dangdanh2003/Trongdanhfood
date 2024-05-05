@@ -15,7 +15,7 @@
 <body>
 
     <!-- Modal -->
-    <div class="modal-product js-madal">
+    <div class="modal-product js-modal">
         <div class="modal-container">
             <div class="modal-close js-xmark">
                 <i class="fa-solid fa-xmark"></i>
@@ -32,10 +32,11 @@
             </div>
             <div class="modal-end">
                 <button class="modal-footer--add">Thêm vào giỏ hàng</button>
-                <button class="modal-footer--close js-close">Close</button>
+                <button class="modal-footer--buy">Mua ngay</button>
             </div>
         </div>
     </div>
+
     <div id="container-fluid wrapper">
         <!-- header -->
         <header class="container-fluid header">
@@ -156,7 +157,7 @@
                         <div class="desc">Mô tả ngắn cho món ăn</div>
                         <div class="price">69.000 VND</div>
                         <div class="btn">
-                            <button>Xem chi tiết</button>
+                            <button class="js-product-2">Xem chi tiết</button>
                         </div>
                     </div>
 
@@ -516,8 +517,9 @@
     <script src="./assets/bootstap/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
     <script src="./assets/js/script.js"></script>
     <script>
+        //Product 1
         const buyItem = document.querySelector('.js-product');
-        const modalShow = document.querySelector('.js-madal');
+        const modalShow = document.querySelector('.js-modal');
         const modalEnd = document.querySelector('.js-xmark');
         const buttonClose = document.querySelector('.js-close');
 
