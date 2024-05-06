@@ -26,12 +26,12 @@ prev.addEventListener('click',function(event){
 })
 
 // menu
-const navbar_menu =document.querySelector(".menu");
-const menuButton=document.querySelector(".navbar_icons");
+// const navbar_menu =document.querySelector(".menu");
+// const menuButton=document.querySelector(".navbar_icons");
 
-    menuButton.addEventListener("click", ()=>{
-    navbar_menu.classList.toggle("navbar_open");
-    menuButton.classList.toggle("open");
-});
+//     menuButton.addEventListener("click", ()=>{
+//     navbar_menu.classList.toggle("navbar_open");
+//     menuButton.classList.toggle("open");
+// });
 
 
