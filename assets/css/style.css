@@ -490,21 +490,6 @@ section{
         font-size: 13px;
     }
 }
-@media (min-width:739px) {
-    .modal-container{
-        padding: 10px;
-        margin: 20px;
-    }
-    .modal-body{
-        width: 300px;
-    }
-    .modal-body--img img{
-        width: 100%;
-    }
-    .modal-end{
-        justify-content: space-around;
-    }
-}
 
 
 
