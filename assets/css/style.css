@@ -473,6 +473,7 @@ section{
 
 @media (max-width:739px) {
     .modal-container{
+        padding: 10px;
         margin: 20px;
     }
     .modal-body{
