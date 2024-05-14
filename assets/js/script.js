@@ -29,9 +29,27 @@ prev.addEventListener('click',function(event){
 const nav_items =document.querySelector(".nav-items");
 const menuIcon =document.querySelector(".menu-icons");
 
-    menuIcon.addEventListener("click", ()=>{
+menuIcon.addEventListener("click", ()=>{
     nav_items.classList.toggle("nav_open");
-    menuIcon.classList.toggle("open")
+    menuIcon.classList.toggle("open");
 });
+
+const menuItems=document.querySelectorAll(".nav-link");
+    for(var i=0;i<menuItems.length;i++){
+        var menuItem=menuItems[i];
+        
+        // this chính là chọn chính cái thẻ ta bấm vào
+        menuItem.onclick=function(event){
+            var isParentMenu=this.nextElementSibling && this.nextElementSibling.classList.contains('nav-items');
+            if(isParentMenu){
+                event.preventDefault();
+            }
+            else{
+                nav_items.classList.remove("nav_open");
+                menuIcon.classList.remove("open");
+            }
+        }
+    }
+
 
 

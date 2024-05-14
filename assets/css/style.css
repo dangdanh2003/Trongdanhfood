@@ -134,6 +134,12 @@ section{
     transition: var(--smooth);
 }
 
+.nav-items.nav_close{
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: var(--smooth);
+}
+
 .nav-item{
     margin-bottom: 10px;
 }
