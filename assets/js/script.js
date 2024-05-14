@@ -25,13 +25,13 @@ prev.addEventListener('click',function(event){
     count++
 })
 
-// menu
-// const navbar_menu =document.querySelector(".menu");
-// const menuButton=document.querySelector(".navbar_icons");
 
-//     menuButton.addEventListener("click", ()=>{
-//     navbar_menu.classList.toggle("navbar_open");
-//     menuButton.classList.toggle("open");
-// });
+const nav_items =document.querySelector(".nav-items");
+const menuIcon =document.querySelector(".menu-icons");
+
+    menuIcon.addEventListener("click", ()=>{
+    nav_items.classList.toggle("nav_open");
+    menuIcon.classList.toggle("open")
+});
 
 
