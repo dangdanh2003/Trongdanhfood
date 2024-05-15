@@ -96,13 +96,18 @@ section{
 }
  */
 
+.wrapper{
+    padding-left: 0;
+    padding-right: 0;
+}
+
  header{
     position: relative;
     width: 100%;
  }
 
 .menu-nav{
-    padding: 40px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,7 +126,7 @@ section{
     width: 60%;
     height: 100%;
     background-color: rgb(246, 204, 127);
-    z-index: 5;
+    z-index: 999;
     transition: var(--smooth);
     list-style: none;
     transform: translateX(-100%);
@@ -131,12 +136,6 @@ section{
 .nav-items.nav_open{
     transform: translateX(0);
     opacity: 1;
-    transition: var(--smooth);
-}
-
-.nav-items.nav_close{
-    transform: translateX(-100%);
-    opacity: 0;
     transition: var(--smooth);
 }
 
@@ -235,7 +234,7 @@ section{
       background-color: transparent;
       display: flex;
       justify-content: center;
-      gap: 50px;
+      gap: 40px;
       align-items: center;
     }
   
