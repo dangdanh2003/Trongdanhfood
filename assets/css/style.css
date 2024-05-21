@@ -304,6 +304,9 @@ section{
     font-weight: bold;
     transition: 0.5s;
 }
+.banner-title{
+    padding: 10px 10px 0;
+}
 
 .banner .banner-left button:hover{
     background-color: orange;
@@ -410,8 +413,7 @@ section{
 
 .list-products .item img:hover{
     transform:scale(1.02);
-    transition:all 0.3s linear
-    
+    transition:all 0.3s linear 
 }
 
 .list-products .item .starts{
@@ -701,7 +703,6 @@ section{
     justify-content: center;
     align-items: center;
     background: #3e413e;
-    text-align: center;
     padding-left: 0;
     padding-right: 0;
 }
@@ -857,7 +858,6 @@ section{
 
 /* Footer */
 .footer{
-    /* background-color:#fafafa; */
     background-image: linear-gradient(0deg, orange, rgb(252, 221, 226));
     padding: 40px;
 }
@@ -871,10 +871,7 @@ section{
     text-decoration: none;
     color: #666;
 }
-.contact-list--item a:hover{
-    color: var(--black);
-    transition: var(--smooth);
-}
+
 
 .footer-col h3{
     font-size: 20px;
@@ -882,6 +879,10 @@ section{
 }
 .contact-list .contact-list--item i{
     display: none;
+}
+.contact-list--item a:hover{
+    color: var(--black);
+    transition: var(--smooth);
 }
 
 .contact-list--item:hover i{
