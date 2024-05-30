@@ -1,3 +1,5 @@
+
+//comment
 const next=document.querySelector('.next');
 const prev=document.querySelector('.prev');
 const comment=document.querySelector('.list-comment');
@@ -25,7 +27,7 @@ prev.addEventListener('click',function(event){
     count++
 })
 
-
+//menu
 const nav_items =document.querySelector(".nav-items");
 const menuIcon =document.querySelector(".menu-icons");
 
